@@ -1,0 +1,38 @@
+<div class="container">
+<div class="container mb-5 mt-1 p-3" style="background-color:#606478">
+  <header class="text-center" style="color: white;">
+    <h1>Company Report</h1>
+    <h3>Sample Company Inc.</h3>
+    <h4>123, Main Street, Cityville, state, country</h4>
+  </header>
+</div>
+
+<div class="container">
+  <table class="table">
+    <thead style="background-color: #C3C5CC; color: white;">
+      <tr class="table-dark">
+        <th scope="col">Company Name</th>
+        <th scope="col">Founded</th>
+        <th scope="col">Company Size</th>
+        <th scope="col">Specialities</th>
+        <th scope="col">Website</th>
+      </tr>
+    </thead>
+    <tbody>
+      <ng-container *ngFor="let companyData of companyDataObject">
+        <tr>
+          <td>{{ companyData.companyName }}</td>
+          <td>{{ companyData.Founded }}</td>
+          <td>{{ companyData.companySize }}</td>
+          <td>{{ companyData.Specialities.join(', ') }}</td>
+          <td>{{ companyData.Website }}</td>
+
+        </tr>
+      </ng-container>
+    </tbody>
+  </table>
+</div>
+<div class="container">
+  <button class="btn btn-primary" (click)="generatePdf()">Generate PDF</button>
+</div>
+</div>

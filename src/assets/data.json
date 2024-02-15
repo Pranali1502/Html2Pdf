@@ -1,0 +1,23 @@
+[
+    {
+        "companyName": "ABC Corporation",
+        "Founded": 1990,
+        "companySize":"500 Employees",
+        "Specialities": ["Technology", "Finance"],
+        "Website": "www.abc-corp.com"
+    },
+    {
+        "companyName": "ABC Corporation",
+        "Founded": 1990,
+        "companySize":"500 Employees",
+        "Specialities": ["Technology", "Finance"],
+        "Website": "www.abc-corp.com"
+    },
+    {
+        "companyName": "ABC Corporation",
+        "Founded": 1990,
+        "companySize":"500 Employees",
+        "Specialities": ["Technology", "Finance"],
+        "Website": "www.abc-corp.com"
+    }
+]
