@@ -126,6 +126,14 @@ export class HtmlToPdfService {
           margin: [0, 5, 0, 5]
         },
       },
+      footer: function( currentPage, pageCount){
+        return [{
+          text: currentPage.toString() + ' of ' + pageCount,  
+          alignment: 'center',
+          fontSize:8,
+          color: 'grey'
+        }]
+      },
     };
 
     pdfMake.createPdf(docDefinition).open();

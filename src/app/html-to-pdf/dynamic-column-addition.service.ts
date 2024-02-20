@@ -157,6 +157,14 @@ export class DynamicColumnAdditionService {
           noWrap: true,
         },
       },
+      footer: function( currentPage, pageCount){
+        return [{
+          text: currentPage.toString() + ' of ' + pageCount,  
+          alignment: 'center',
+          fontSize:8,
+          color: 'grey'
+        }]
+      },
     };
     pdfMake.createPdf(docDefinition).open();
   }
@@ -266,6 +274,14 @@ export class DynamicColumnAdditionService {
           margin: [0, 5, 0, 5],
           noWrap: true,
         },
+      },
+      footer: function( currentPage, pageCount){
+        return [{
+          text: currentPage.toString() + ' of ' + pageCount,  
+          alignment: 'center',
+          fontSize:8,
+          color: 'grey'
+        }]
       },
     };
     pdfMake.createPdf(docDefinition).open();
