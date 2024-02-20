@@ -1,0 +1,19 @@
+[
+    {   "Sr.No":1,
+        "companyName": "ABC Corporation",
+        "Founded": 1990,
+        "Specialities": ["Technology", "Finance"],
+        "companyName1": "Company Name",  
+        "companyName2": "Company Name"
+        
+    },
+    {
+        "Sr.No":1,
+        "companyName": "ABC Corporation",
+        "Founded": 1990,
+        "Specialities": ["Technology", "Finance"],
+        "companyName1": "Company Name",  
+        "companyName2": "Company Name"
+    }
+    
+]

@@ -15,6 +15,8 @@ import { DynamicColumnAdditionService } from './dynamic-column-addition.service'
 export class HtmlToPdfComponent implements OnInit{
   companyDataObject: any[]=[];
   dynamicData: any[]=[];
+  headerData: any[]= [];
+  rowData: any[] =[];
 
   constructor(private h2pService: HtmlToPdfService,
     private dynamicService: DynamicColumnAdditionService) {}
@@ -25,7 +27,13 @@ export class HtmlToPdfComponent implements OnInit{
     });
     this.dynamicService.getCompanyData().subscribe(data =>{
       this.dynamicData= data;
-    })
+    });
+    this.dynamicService.getHeaderData().subscribe(data=>{
+      this.headerData=data;
+    });
+    this.dynamicService.getRowData().subscribe(data=>{
+      this.rowData=data;
+    });
   }
 
   generatePdf(): void {
@@ -34,5 +42,13 @@ export class HtmlToPdfComponent implements OnInit{
 
   generatePdfDynamically():void{
     this.dynamicService.generatePdfDynamically(this.dynamicData);
+  }
+
+  generatePdfSeparate():void{
+    
+    console.log('Header Data:',this.headerData);
+console.log('Row Data:',this.rowData);
+    
+    this.dynamicService.generatePdfSeparate(this.headerData, this.rowData);
   }
 }

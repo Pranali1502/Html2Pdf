@@ -1,16 +1,17 @@
 [
     {   "Sr.No":1,
         "companyName": "ABC Corporation",
-        "Founded": 1990
-       
+        "Founded": 1990,
+        "Specialities": ["Technology", "Finance"]
+        
         
     },
     {
         "Sr.No":1,
         "companyName": "ABC Corporation",
-        "Founded": 1990
+        "Founded": 1990,
+        "Specialities": ["Technology", "Finance"]
        
-        
     }
     
 ]
